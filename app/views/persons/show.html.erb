@@ -1,0 +1,23 @@
+<div class="parents">
+  <% @parents.each do |parent| %>
+  <%= image_tag parent.image %>
+  <%end%>
+</div>
+<div>
+  <h3 class="bio"><%=@person.age %> </h3>
+  
+</div>
+<div>
+  <%= image_tag @person.image %>
+  <%@couples.each do |couple| %>
+  <%= image_tag couple.image %>
+  <%end%>
+  <h3 class="movie-title"><%= @person.last_name %></h3>
+  <p class="movie-release-year"><%= @person.age %></p>
+  <p class="movie-plot"><%= @person.email %></p>
+</div>
+<div>
+  <%@kids.each do |kid| %>
+  <%= image_tag kid.image %>
+  <%end%>
+</div>

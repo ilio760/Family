@@ -1,0 +1,23 @@
+<div class="barrarriba">
+  
+  <div class="cajascontenedoras">
+
+    
+    <!--<h2>The Unknown</h2>
+    <p>Welcome to the Unknown where you will find your unknown relatives that are waiting to be found.</p>
+    <a href="#">The Search Awaits </a>-->
+  </div>
+</div>
+
+<div class="main">
+  <div class="cajascontenedoras">
+  <h2>Users</h2>
+    <% @persons.each do |person| %>
+    <div class="movie">
+     <%= image_tag person.image %>
+      <h3><%= person.first_name %></h3>
+    
+    </div>
+    <% end %>
+  </div>
+</div>

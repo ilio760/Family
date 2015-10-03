@@ -15,6 +15,7 @@ ActiveRecord::Schema.define(version: 20150912013513) do
 
   create_table "people", force: :cascade do |t|
     t.integer  "age"
+    t.string   "image"
     t.string   "first_name"
     t.string   "last_name"
     t.string   "middle_name"
@@ -30,12 +31,12 @@ ActiveRecord::Schema.define(version: 20150912013513) do
   end
 
   create_table "relations", force: :cascade do |t|
-    t.integer  "person1_id"
-    t.integer  "person2_id"
-    t.string   "type"
+    t.integer  "person_id"
+    t.integer  "relative_id"
+    t.string   "relation_type"
     t.boolean  "active"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
   end
 
 end

@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+get '/persons' => 'persons#index'
+  get '/persons/:id' => 'persons#show', as: :person
+  get '/relations' => 'relations#index'
+  get '/relations/:id' => 'relations#show', as: :relation
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
